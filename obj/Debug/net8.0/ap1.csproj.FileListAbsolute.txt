@@ -12,3 +12,4 @@ C:\Users\Usuario\c#\ap1\obj\Debug\net8.0\refint\ap1.dll
 C:\Users\Usuario\c#\ap1\obj\Debug\net8.0\ap1.pdb
 C:\Users\Usuario\c#\ap1\obj\Debug\net8.0\ap1.genruntimeconfig.cache
 C:\Users\Usuario\c#\ap1\obj\Debug\net8.0\ref\ap1.dll
+C:\Users\Usuario\c#\ap1\obj\Debug\net8.0\ap1.sourcelink.json

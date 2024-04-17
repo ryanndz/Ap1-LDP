@@ -1,5 +1,6 @@
-﻿int Cont = 0;
-while (Cont != 1)
+﻿int Cont;
+
+do
 {
     Console.WriteLine("Seja bem-vindo, me informe seu nome por favor.");
     string? nome = Console.ReadLine();
@@ -7,7 +8,7 @@ while (Cont != 1)
     Console.WriteLine("Me informe sua idade.");
     int idade = Convert.ToInt32(Console.ReadLine());
 
-    string faixaEtaria;  // Declaração da variável faixaEtaria
+    string faixaEtaria;
 
     if (idade <= 11)
     {
@@ -36,15 +37,15 @@ while (Cont != 1)
 
     if (IMC < 18.5f)
     {
-         Console.WriteLine($"Seu nome é {nome}, você tem {idade} anos e se encaixa na faixa etária de {faixaEtaria}. Seu IMC é: {IMC} . Você está abaixo do peso ideal.");
+        Console.WriteLine($"Seu nome é {nome}, você tem {idade} anos e se encaixa na faixa etária de {faixaEtaria}. Seu IMC é: {IMC}. Você está abaixo do peso ideal.");
     }
     else if (IMC >= 18.5f && IMC <= 24.9f)
     {
-         Console.WriteLine($"Seu nome é {nome}, você tem {idade} anos e se encaixa na faixa etária de {faixaEtaria}. Seu IMC é: {IMC} . Você está com peso normal.");
+        Console.WriteLine($"Seu nome é {nome}, você tem {idade} anos e se encaixa na faixa etária de {faixaEtaria}. Seu IMC é: {IMC}. Você está com peso normal.");
     }
     else if (IMC >= 25f && IMC <= 29.9f)
     {
-         Console.WriteLine($"Seu nome é {nome}, você tem {idade} anos e se encaixa na faixa etária de {faixaEtaria}. Seu IMC é: {IMC} . Você está com sobrepeso.");
+        Console.WriteLine($"Seu nome é {nome}, você tem {idade} anos e se encaixa na faixa etária de {faixaEtaria}. Seu IMC é: {IMC}. Você está com sobrepeso.");
     }
     else if (IMC < 0)
     {
@@ -52,11 +53,10 @@ while (Cont != 1)
     }
     else
     {
-        Console.WriteLine($"Seu nome é {nome}, você tem {idade} anos e se encaixa na faixa etária de {faixaEtaria}. Seu IMC é: {IMC} . Você está com obesidade.");
+        Console.WriteLine($"Seu nome é {nome}, você tem {idade} anos e se encaixa na faixa etária de {faixaEtaria}. Seu IMC é: {IMC}. Você está com obesidade.");
     }
-
 
     Console.WriteLine("Digite 1 para sair ou qualquer outro número para continuar:");
     Cont = Convert.ToInt32(Console.ReadLine());
-    }
 
+} while (Cont != 1);
